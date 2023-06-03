@@ -96,7 +96,7 @@ class CAR:
   RIDGELINE = "HONDA RIDGELINE 2017"
   INSIGHT = "HONDA INSIGHT 2019"
   HONDA_E = "HONDA E 2020"
-  HRV_RV_2023 = "HONDA HR-V (RV NON US)"
+  HRV_RV_2023 = "HONDA HR-V RV NON US"
 
 
 class Footnote(Enum):
@@ -152,7 +152,7 @@ CAR_INFO: Dict[str, Optional[Union[HondaCarInfo, List[HondaCarInfo]]]] = {
   CAR.RIDGELINE: HondaCarInfo("Honda Ridgeline 2017-23", min_steer_speed=12. * CV.MPH_TO_MS),
   CAR.INSIGHT: HondaCarInfo("Honda Insight 2019-22", "All", min_steer_speed=3. * CV.MPH_TO_MS),
   CAR.HONDA_E: HondaCarInfo("Honda e 2020", "All", min_steer_speed=3. * CV.MPH_TO_MS),
-  CAR.HRV_RV_2023: HondaCarInfo("Honda HRV/Vezel (RV) Non US","All"),
+  CAR.HRV_RV_2023: HondaCarInfo("Honda HRV/Vezel RV Non US","All"),
 }
 
 HONDA_VERSION_REQUEST = bytes([uds.SERVICE_TYPE.READ_DATA_BY_IDENTIFIER]) + \
